@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - ITHL</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/1ithlwords.png" alt="League Logo" class="logo me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Goalie Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rosters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+                </ul>
+                <!-- Right Aligned Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Profile Edit Section -->
+   <section class="profile-section mt-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Edit Profile</h2>
+        <form>
+            <div class="text-center mb-4">
+                <img src="images/fMSRJa_q.jpeg" alt="Profile Picture" class="profile-picture mb-3">
+                <div class="mb-3">
+                    <input type="file" class="form-control" id="profilePicture" accept="image/*">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="primaryPosition" class="form-label">Primary Position</label>
+                <select id="primaryPosition" class="form-select">
+                    <option value="" disabled selected>Select your position</option>
+                    <option value="C">Center (C)</option>
+                    <option value="LW">Left Wing (LW)</option>
+                    <option value="RW">Right Wing (RW)</option>
+                    <option value="LD">Left Defense (LD)</option>
+                    <option value="RD">Right Defense (RD)</option>
+                    <option value="G">Goalie (G)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Positions</label>
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="positionC" name="positions" value="C" class="form-check-input">
+                        <label for="positionC" class="form-check-label">Center (C)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="positionLW" name="positions" value="LW" class="form-check-input">
+                        <label for="positionLW" class="form-check-label">Left Wing (LW)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="positionRW" name="positions" value="RW" class="form-check-input">
+                        <label for="positionRW" class="form-check-label">Right Wing (RW)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="positionLD" name="positions" value="LD" class="form-check-input">
+                        <label for="positionLD" class="form-check-label">Left Defense (LD)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="positionRD" name="positions" value="RD" class="form-check-input">
+                        <label for="positionRD" class="form-check-label">Right Defense (RD)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="positionG" name="positions" value="G" class="form-check-input">
+                        <label for="positionG" class="form-check-label">Goalie (G)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="handedness" class="form-label">Handedness</label>
+                <select id="handedness" class="form-select">
+                    <option value="" disabled selected>Select handedness</option>
+                    <option value="Right">Right</option>
+                    <option value="Left">Left</option>
+                    <option value="Both">Both</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location" class="form-label">Location</label>
+                <select id="location" class="form-select">
+                    <option value="" disabled selected>Select your location</option>
+                    <option value="NA West">North America West</option>
+                    <option value="NA Central">North America Central</option>
+                    <option value="NA East">North America East</option>
+                    <option value="EU West">European West</option>
+                    <option value="EU East">European East</option>
+                    <option value="EU North">European North</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea id="bio" class="form-control" rows="4" placeholder="Write a short bio about yourself..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-index.css">
+    </head>
+
+    <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/1ithlwords.png" alt="League Logo" class="logo me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Goalie Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rosters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+                    <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
+                </ul>
+                <!-- Right Aligned Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile View Section -->
+    <section class="profile-section mt-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Player Profile</h2>
+
+            <div class="row">
+                <!-- Profile Picture and Basic Info -->
+                <div class="col-md-4 text-center">
+                    <img src="images/fMSRJa_q.jpeg" alt="Profile Picture" class="profile-picture mb-3">
+                </div>
+                <div class="col-md-8 profile-info">
+                    <div class="row mb-2">
+                        <div class="col-md-6"><strong>Primary Position:</strong> Center</div>
+                        <div class="col-md-6"><strong>Handedness:</strong> Right</div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6"><strong>Positions:</strong> Center, Left Wing</div>
+                        <div class="col-md-6"><strong>Location:</strong> North America East</div>
+                    </div>
+                    <div class="bio-section">
+                        <h4>Bio</h4>
+                        <p id="bio">This is a short bio about the player...</p>
+                    </div>
+                </div>
+            </div>
+
+
+           <!-- Combined Career Stats Section -->
+           <div class="mb-4">
+            <h4>Career Stats</h4>
+            <table class="table table-bordered stats-table">
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Club</th>
+                        <th>GP</th>
+                        <th>G</th>
+                        <th>A</th>
+                        <th>PTS</th>
+                        <th>PIMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NA S18 Core (Current Season)</td>
+                        <td><img src="images/square-blueline.png" alt="NA S18 Core Logo" class="team-logo">Blue Line</td>
+                        <td>45</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>50</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>NA S17 Rammer</td>
+                        <td><img src="images/square-blueline.png" alt="NA S17 Rammer Logo" class="team-logo">Blue Line</td>
+                        <td>50</td>
+                        <td>25</td>
+                        <td>35</td>
+                        <td>60</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>NA S16 Core</td>
+                        <td><img src="images/square-glorifiedcrew.png" alt="NA S16 Core Logo" class="team-logo">Glorified Crew</td>
+                        <td>48</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>40</td>
+                        <td>18</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total Career</th>
+                        <th></th>
+                        <th>143</th> <!-- Total Career Games Played -->
+                        <th>60</th>  <!-- Total Career Goals -->
+                        <th>85</th>  <!-- Total Career Assists -->
+                        <th>145</th> <!-- Total Career Points -->
+                        <th>33</th>  <!-- Total Career Penalties -->
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+       </div>
+   </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
