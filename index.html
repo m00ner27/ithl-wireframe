@@ -22,22 +22,66 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="free-agents.html">Free Agents</a></li>
                     <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Goalie Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Rosters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="goalie-stats.html">Goalie Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manager.html">Manager View</a></li>
                     <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
                     <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
                 </ul>
                 <!-- Right Aligned Links -->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
+  <!-- Team Logos Section -->
+<section class="team-logos-section mt-4">
+    <div class="container">
+        <div class="team-logos d-flex flex-wrap justify-content-center">
+            <a href="club-boats.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-boats.png" alt="Boats Logo">
+                </div>
+            </a>
+            <a href="club-roosters.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-iserlohnroosters.png" alt="Roosters Logo">
+                </div>
+            </a>
+            <a href="club-kings.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-yorkcitykings.png" alt="Kings Logo">
+                </div>
+            </a>
+            <a href="club-snipers.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-blueline.png" alt="Snipers Logo">
+                </div>
+            </a>
+            <a href="club-mutts.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-mutts.png" alt="Mutts Logo">
+                </div>
+            </a>
+            <a href="club-lightsout.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-lightsout.png" alt="Lights Out Logo">
+                </div>
+            </a>
+            <a href="club-glorifiedcrew.html" class="team-logo-link">
+                <div class="logo-container">
+                    <img src="images/square-glorifiedcrew.png" alt="Glorified Crew Logo">
+                </div>
+            </a>
+            <!-- Add more logos as needed -->
+        </div>
+    </div>
+</section>
 
     
     <!-- News Section -->
@@ -83,7 +127,7 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2 class="text-center">Stats Leaders</h2>
-            <a href="stats-page.html" class="btn btn-primary">Full Stats</a>
+            <a href="player-stats.html" class="btn btn-primary">Full Stats</a>
         </div>
         <div class="row">
             <!-- Stat Table 1 -->
@@ -187,7 +231,7 @@
 
 
 
-    <!-- Recent Transactions Section -->
+ <!-- Recent Transactions Section -->
 <section class="recent-transactions-section mt-4">
     <div class="container">
         <h2 class="text-center mb-4">Recent Transactions</h2>
@@ -201,18 +245,42 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="text-center"><img src="images/square-mutts.png" alt="Mutts Logo" class="team-logo"> Mutts</td>
-                    <td>Mutts sign Mutt_Anderson for NA S18</td>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-mutts.png" alt="Mutts Logo" class="team-logo"> Mutts
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Mutts sign Mutt_Anderson for NA S18
+                        </a>
+                    </td>
                     <td>08/27/2024</td>
                 </tr>
                 <tr>
-                    <td class="text-center"><img src="images/square-lightsout.png" alt="Lights Out Logo" class="team-logo"> Lights Out</td>
-                    <td>Lights Out release SheLuvvDJ20 for NA S18</td>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-lightsout.png" alt="Lights Out Logo" class="team-logo"> Lights Out
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Lights Out release SheLuvvDJ20 for NA S18
+                        </a>
+                    </td>
                     <td>08/27/2024</td>
                 </tr>
                 <tr>
-                    <td class="text-center"><img src="images/square-glorifiedcrew.png" alt="Glorified Crew Logo" class="team-logo"> Glorified Crew</td>
-                    <td>Glorfied Crew release Saddzy for NA S18</td>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-glorifiedcrew.png" alt="Glorified Crew Logo" class="team-logo"> Glorified Crew
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Glorified Crew release Saddzy for NA S18
+                        </a>
+                    </td>
                     <td>08/27/2024</td>
                 </tr>
                 <!-- Add more transactions as needed -->
@@ -220,6 +288,8 @@
         </table>
     </div>
 </section>
+
+
 
     <!-- Recent Games Section -->
     <section class="recent-games-section mt-4">
@@ -255,17 +325,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr onclick="window.location.href='game-details.html';">
+                    <tr onclick="window.location.href='game-summary.html';">
                         <td class="text-center"><img src="images/square-boats.png" alt="Team 1 Logo" class="team-logo"> Boats</td>
                         <td class="text-center">2-4</td>
                         <td class="text-center"><span>Roosters</span> <img src="images/square-iserlohnroosters.png" alt="Team 2 Logo" class="team-logo"></td>
                     </tr>
-                    <tr onclick="window.location.href='game-details.html';">
+                    <tr onclick="window.location.href='game-summary.html';">
                         <td class="text-center"><img src="images/square-yorkcitykings.png" alt="Team 3 Logo" class="team-logo"> Kings</td>
                         <td class="text-center">1-3</td>
                         <td class="text-center"><span>Blue Line Snipers</span> <img src="images/square-blueline.png" alt="Team 4 Logo" class="team-logo"></td>
                     </tr>
-                    <tr onclick="window.location.href='game-details.html';">
+                    <tr onclick="window.location.href='game-summary.html';">
                         <td class="text-center"><img src="images/square-yorkcitykings.png" alt="Team 3 Logo" class="team-logo"> Kings</td>
                         <td class="text-center">1-3</td>
                         <td class="text-center"><span>Blue Line Snipers</span> <img src="images/square-blueline.png" alt="Team 4 Logo" class="team-logo"></td>

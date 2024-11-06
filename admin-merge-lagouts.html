@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITHL - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+   
+    <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/1ithlwords.png" alt="League Logo" class="logo me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                <li class="nav-item"><a class="nav-link" href="free-agents.html">Free Agents</a></li>
+                <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="goalie-stats.html">Goalie Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage-seasons.html">Admin Panel</a></li>
+                <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+                <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
+            </ul>
+            <!-- Right Aligned Links -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Admin Panel Links (Clickable Tabs) -->
+<section class="admin-links mt-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-panel.html">Admin Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-manage-seasons.html">Create Seasons & Divisions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-create-club.html">Create Club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-add-club-to-season.html">Add Clubs to Season/Division</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-edit-club-info.html">Edit Club Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-roster-management.html">Roster Management</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="admin-manage-users.html">Manage Users</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="admin-schedule-games.html">Schedule Games</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="admin-link-games.html">Link Games</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="admin-remove-games.html">Unlink Games</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="admin-remove-club-from-season.html">Remove Clubs from Season</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="admin-delete-club.html">Delete Club</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  <!-- Merge Stats Section -->
+<section class="merge-stats mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center bg-dark text-white">
+                        <h3>Merge Stats</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Teams Playing -->
+                        <div class="text-center mb-3">
+                            <h5>Boats vs Canucks</h5>
+                            <h6>November 4 2024 9:00 PM EST</h6>
+                        </div>
+                        
+                        <!-- Overtime Checkbox -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="overtimeGame">
+                            <label class="form-check-label" for="overtimeGame">
+                                Overtime Game?
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table for Game 1 and below -->
+                <div class="card shadow-sm mt-4">
+                    <div class="card-body">
+                        <!-- Game 1 Heading -->
+                        <div class="text-center mb-3">
+                            <h5 class="bg-light p-2">Game 1</h5>
+                        </div>
+                        
+                        <!-- Team Name (Boats) -->
+                        <div class="text-center mb-3">
+                            <h5>Boats</h5>
+                        </div>
+                        
+                        <!-- Stats Table (Boats) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Team Name (Canucks) -->
+                        <div class="text-center mb-3">
+                            <h5>Canucks</h5>
+                        </div>
+
+                        <!-- Stats Table (Canucks) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Checkbox to use stats for merging -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="useStatsForMerging">
+                            <label class="form-check-label" for="useStatsForMerging">
+                                Use stats for this game when merging
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Table for Game 2 and below -->
+                <div class="card shadow-sm mt-4">
+                    <div class="card-body">
+                        <!-- Game 2 Heading -->
+                        <div class="text-center mb-3">
+                            <h5 class="bg-light p-2">Game 2</h5>
+                        </div>
+                        
+                        <!-- Team Name (Boats) -->
+                        <div class="text-center mb-3">
+                            <h5>Boats</h5>
+                        </div>
+                        
+                        <!-- Stats Table (Boats) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Team Name (Canucks) -->
+                        <div class="text-center mb-3">
+                            <h5>Canucks</h5>
+                        </div>
+
+                        <!-- Stats Table (Canucks) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Checkbox to use stats for merging -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="useStatsForMerging">
+                            <label class="form-check-label" for="useStatsForMerging">
+                                Use stats for this game when merging
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Table for Game 3 and below -->
+                <div class="card shadow-sm mt-4">
+                    <div class="card-body">
+                        <!-- Game 3 Heading -->
+                        <div class="text-center mb-3">
+                            <h5 class="bg-light p-2">Game 3</h5>
+                        </div>
+                        
+                        <!-- Team Name (Boats) -->
+                        <div class="text-center mb-3">
+                            <h5>Boats</h5>
+                        </div>
+                        
+                        <!-- Stats Table (Boats) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Team Name (Canucks) -->
+                        <div class="text-center mb-3">
+                            <h5>Canucks</h5>
+                        </div>
+
+                        <!-- Stats Table (Canucks) -->
+                        <table class="table table-bordered">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th scope="col">Player Tag</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Player 1 -->
+                                <tr>
+                                    <td>Player1</td>
+                                    <td>C</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 2 -->
+                                <tr>
+                                    <td>Player2</td>
+                                    <td>RW</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <!-- Player 3 -->
+                                <tr>
+                                    <td>Player3</td>
+                                    <td>LW</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <!-- Player 4 -->
+                                <tr>
+                                    <td>Player4</td>
+                                    <td>RD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 5 -->
+                                <tr>
+                                    <td>Player5</td>
+                                    <td>LD</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <!-- Player 6 -->
+                                <tr>
+                                    <td>Player6</td>
+                                    <td>G</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Checkbox to use stats for merging -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="useStatsForMerging">
+                            <label class="form-check-label" for="useStatsForMerging">
+                                Use stats for this game when merging
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Merge Button -->
+<div class="text-center mt-4">
+    <button class="btn btn-primary" style="width: 300px;">Merge Stats</button>
+</div>
+
+</section>
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

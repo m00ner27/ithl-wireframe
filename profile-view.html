@@ -3,71 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Profile</title>
+    <title>ITHL - Home</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style-index.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/1ithlwords.png" alt="League Logo" class="logo me-2">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Goalie Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Rosters</a></li>
-                    <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
-                    <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
-                </ul>
-                <!-- Right Aligned Links -->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
-                </ul>
-            </div>
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/1ithlwords.png" alt="League Logo" class="logo me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                <li class="nav-item"><a class="nav-link" href="free-agents.html">Free Agents</a></li>
+                <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="goalie-stats.html">Goalie Stats</a></li>
+                <li class="nav-item"><a class="nav-link" href="manager.html">Manager View</a></li>
+                <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
+                <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
+            </ul>
+            <!-- Right Aligned Links -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Profile View Section -->
-    <section class="profile-section mt-4">
-        <div class="container">
-            <h2 class="text-center mb-4">Player Profile</h2>
+<section class="profile-section mt-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Player Profile</h2>
 
-            <div class="row">
-                <!-- Profile Picture and Basic Info -->
-                <div class="col-md-4 text-center">
-                    <img src="images/fMSRJa_q.jpeg" alt="Profile Picture" class="profile-picture mb-3">
-                </div>
-                <div class="col-md-8 profile-info">
-                    <div class="row mb-2">
-                        <div class="col-md-6"><strong>Primary Position:</strong> Center</div>
-                        <div class="col-md-6"><strong>Handedness:</strong> Right</div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-md-6"><strong>Positions:</strong> Center, Left Wing</div>
-                        <div class="col-md-6"><strong>Location:</strong> North America East</div>
-                    </div>
-                    <div class="bio-section">
-                        <h4>Bio</h4>
-                        <p id="bio">This is a short bio about the player...</p>
-                    </div>
+        <div class="row">
+            <!-- Profile Picture and Basic Info -->
+            <div class="col-md-4 text-center">
+                <img src="images/fMSRJa_q.jpeg" alt="Profile Picture" class="profile-picture mb-3">
+                <!-- Mail Icon and Inbox Label -->
+                <div class="mail-icon">
+                    <a href="inbox.html" class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span> Inbox </span>
+                    </a>
                 </div>
             </div>
+            <div class="col-md-8 profile-info">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <strong>Primary Position:</strong>
+                        <span class="badge bg-red">C</span> <!-- Center -->
+                    </div>
+                    <div class="col-md-6"><strong>Handedness:</strong> Right</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <strong>Positions:</strong>
+                        <span class="badge bg-red">C</span> <!-- Center -->
+                        <span class="badge bg-green">LW</span> <!-- Left Wing -->
+                    </div>
+                    <div class="col-md-6"><strong>Location:</strong> North America East</div>
+                </div>
+                <div class="bio-section">
+                    <h4>Bio</h4>
+                    <p id="bio">This is a short bio about the player...</p>
+                </div>
+            </div>
+        </div>
 
+<!-- Season by Season Record Section -->
+<div class="mb-4">
+    <h4>Season by Season Record</h4>
+    <table class="table table-bordered stats-table">
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Club</th>
+                <th>GP</th>
+                <th>W</th>
+                <th>L</th>
+                <th>OTL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>NA S18 Core (Current Season)</td>
+                <td><img src="images/square-blueline.png" alt="NA S18 Core Logo" class="team-logo">Blue Line</td>
+                <td>45</td>
+                <td>30</td>
+                <td>12</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>NA S17 Rammer</td>
+                <td><img src="images/square-blueline.png" alt="NA S17 Rammer Logo" class="team-logo">Blue Line</td>
+                <td>50</td>
+                <td>28</td>
+                <td>18</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>NA S16 Core</td>
+                <td><img src="images/square-glorifiedcrew.png" alt="NA S16 Core Logo" class="team-logo">Glorified Crew</td>
+                <td>48</td>
+                <td>25</td>
+                <td>20</td>
+                <td>3</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th></th>
+                <th>143</th> <!-- Total GP -->
+                <th>83</th> <!-- Total Wins -->
+                <th>50</th> <!-- Total Losses -->
+                <th>10</th> <!-- Total OTL -->
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
-           <!-- Combined Career Stats Section -->
-           <div class="mb-4">
+        <!-- Combined Career Stats Section -->
+        <div class="mb-4">
             <h4>Career Stats</h4>
             <table class="table table-bordered stats-table">
                 <thead>
@@ -124,8 +193,10 @@
                 </tfoot>
             </table>
         </div>
-       </div>
-   </section>
+
+        
+    </div>
+</section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

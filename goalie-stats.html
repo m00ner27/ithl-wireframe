@@ -50,7 +50,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header text-center">
-                        Top Scorer
+                        Save %
                     </div>
                     <div class="card-body">
                         <div class="top-player text-center mb-3">
@@ -58,10 +58,10 @@
                             <p><strong>Username1</strong></p>
                             <p><img src="images/square-boats.png" alt="Team Logo" class="team-logo"></p>
                             <p>#99</p>
-                            <p><strong>Goals: 45</strong></p>
+                            <p><strong>Save %: .845</strong></p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><img src="images/square-blueline.png" alt="Team Logo" class="small-team-logo"> Player2 <span class="stat-total">38</span></li>
+                            <li class="list-group-item"><img src="images/square-blueline.png" alt="Team Logo" class="small-team-logo"> Player2 <span class="stat-total">.938</span></li>
                             <li class="list-group-item"><img src="images/square-boats.png" alt="Team Logo" class="small-team-logo"> Player3 <span class="stat-total">36</span></li>
                             <li class="list-group-item"><img src="images/square-iserlohnroosters.png" alt="Team Logo" class="small-team-logo"> Player4 <span class="stat-total">35</span></li>
                             <li class="list-group-item"><img src="images/square-yorkcitykings.png" alt="Team Logo" class="small-team-logo"> Player5 <span class="stat-total">34</span></li>
@@ -74,7 +74,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header text-center">
-                        Most Assists
+                        Goals Against Average
                     </div>
                     <div class="card-body">
                         <div class="top-player text-center mb-3">
@@ -82,7 +82,7 @@
                             <p><strong>Username2</strong></p>
                             <p><img src="images/square-blueline.png" alt="Team Logo" class="team-logo"></p>
                             <p>#27</p>
-                            <p><strong>Assists: 52</strong></p>
+                            <p><strong>GAA: 52</strong></p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img src="images/square-blueline.png" alt="Team Logo" class="small-team-logo"> Player2 <span class="stat-total">38</span></li>
@@ -98,7 +98,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header text-center">
-                        Best Save Percentage
+                        Saves
                     </div>
                     <div class="card-body">
                         <div class="top-player text-center mb-3">
@@ -106,7 +106,7 @@
                             <p><strong>Username3</strong></p>
                             <p><img src="images/square-glorifiedcrew.png" alt="Team Logo" class="team-logo"></p>
                             <p>#31</p>
-                            <p><strong>Save %: 93.5</strong></p>
+                            <p><strong>Saves: 93</strong></p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img src="images/square-blueline.png" alt="Team Logo" class="small-team-logo"> Player2 <span class="stat-total">38</span></li>
@@ -122,7 +122,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-header text-center">
-                        Most Penalty Minutes
+                        Shutouts
                     </div>
                     <div class="card-body">
                         <div class="top-player text-center mb-3">
@@ -130,7 +130,7 @@
                             <p><strong>Username4</strong></p>
                             <p><img src="images/square-iserlohnroosters.png" alt="Team Logo" class="team-logo"></p>
                             <p>#88</p>
-                            <p><strong>PIM: 120</strong></p>
+                            <p><strong>SO: 120</strong></p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img src="images/square-blueline.png" alt="Team Logo" class="small-team-logo"> Player2 <span class="stat-total">38</span></li>
@@ -146,24 +146,16 @@
 </section>
 
 
- <!-- Sorting Option -->
- <div class="container mt-4">
+<!-- Sorting Option -->
+<div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="text-center">Player Statistics</h2>
-        <div class="form-group d-flex align-items-center">
-            <label for="seasonSelect" class="me-2">Select Season:</label>
-            <select class="form-control me-3" id="seasonSelect">
+        <h2 class="text-center">Goalie Statistics</h2>
+        <div class="form-group">
+            <label for="seasonSelect">Select Season:</label>
+            <select class="form-control" id="seasonSelect">
                 <option>ALL-TIME</option>
                 <option>S18</option>
                 <option>S17</option>
-            </select>
-            
-            <label for="divisionSelect" class="me-2">Select Division:</label>
-            <select class="form-control" id="divisionSelect">
-                <option>All Divisions</option>
-                <option>Elite</option>
-                <option>Sweat</option>
-                <option>Rammer</option>
             </select>
         </div>
     </div>
@@ -176,18 +168,13 @@
                     <th>RANK</th>
                     <th>SKATER</th>
                     <th>GP</th>
-                    <th>G</th>
-                    <th>A</th>
-                    <th>PTS</th>
-                    <th>PPG</th>
-                    <th>GWG</th>
-                    <th>SHG</th>
-                    <th>DFG</th>
-                    <th>HITS</th>
-                    <th>PIM</th>
-                    <th>DRAW</th>
-                    <th>S</th>
                     <th>SA</th>
+                    <th>SV</th>
+                    <th>GA</th>
+                    <th>GAA</th>
+                    <th>SV%</th>
+                    <th>SO</th>
+                    <th>PTS</th>
                 </tr>
             </thead>
             <tbody>
@@ -201,43 +188,30 @@
                     <td>14</td>
                     <td>10</td>
                     <td>24</td>
+                    <td>24</td>
                     <td>2</td>
                     <td>1</td>
                     <td>0</td>
-                    <td>4</td>
-                    <td>147</td>
-                    <td>14</td>
-                    <td>7</td>
-                    <td>23</td>
-                    <td>26</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>
-                        <img src="images/ithl-fan.png" alt="Player 2" class="small-team-logo">
-                        <a href="profile-view.html" class="player-link">slapshot_77</a>
+                        <img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo">
+                        <a href="profile-view.html" class="player-link">m00ner</a>
                     </td>
                     <td>5</td>
                     <td>10</td>
                     <td>0</td>
+                    <td>24</td>
                     <td>10</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>9</td>
-                    <td>1</td>
                 </tr>
                 <!-- Add more rows as needed -->
             </tbody>
         </table>
     </div>
-</div>
-
-
 </div>
 
   <!-- Bootstrap JS -->

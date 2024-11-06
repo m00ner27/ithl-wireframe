@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITHL - Home</title>
+    <title>ITHL - Club</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style-index.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -22,21 +22,219 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="free-agents.html">Free Agents</a></li>
                     <li class="nav-item"><a class="nav-link" href="player-stats.html">Player Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Goalie Stats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Rosters</a></li>
+                    <li class="nav-item"><a class="nav-link" href="goalie-stats.html">Goalie Stats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manager.html">Manager View</a></li>
                     <li class="nav-item"><a class="nav-link" href="club.html">Club</a></li>
                     <li class="nav-item"><a class="nav-link" href="edit-profile.html">Edit Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="profile-view.html">Profile</a></li>
                 </ul>
                 <!-- Right Aligned Links -->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sign-up.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+<!-- Club Name Section -->
+<div class="container">
+    <div class="heading-with-image">
+        <img src="images/square-boats.png" alt="Club Image">
+        <h2>Boats</h2>
+    </div>
+</div>
+
+<!-- Rosters Section -->
+<section class="rosters-section mt-4">
+    <div class="container">
+        <!-- Flex container to center the heading and align the dropdown to the right -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Flex container to center the heading -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <h2 class="mb-0">Rosters</h2>
+            </div>
+
+            <!-- Season Dropdown Sort (aligned to the right) -->
+            <div>
+                <label for="season-dropdown" class="mr-2">Sort by Season:</label>
+                <select id="season-dropdown" class="form-control w-auto">
+                    <option value="2024">Season 19</option>
+                    <option value="2023">Season 18</option>
+                    <option value="2022">Season 17</option>
+                    <option value="2021">Season 16</option>
+                    <!-- Add more seasons as needed -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Rosters Table -->
+        <table class="table table-striped table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Games Played</th>
+                    <th>Player Name</th>
+                    <th>Primary Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td><a href="profile-view.html">John Doe</a></td>
+                    <td><span class="badge bg-green">LW</span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><a href="profile-view.html">Jane Smith</a></td>
+                    <td><span class="badge bg-yellow">RD</span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><a href="profile-view.html">Samuel Lee</a></td>
+                    <td><span class="badge bg-purple">G</span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><a href="profile-view.html">Chris Green</a></td>
+                    <td><span class="badge bg-blue">RW</span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="profile-view.html">Olivia Brown</a></td>
+                    <td><span class="badge bg-teal">LD</span></td>
+                </tr>
+                <!-- Add more player rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Recent Games Section -->
+<section class="recent-games-section mt-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Recent Games</h2>
+        <table class="table table-striped table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Opponent</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08/25/2024</td>
+                    <td>
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-lightsout.png" alt="Lights Out Logo" class="team-logo"> Lights Out
+                        </a>
+                    </td>
+                    <td>
+                        <a href="game-summary.html" class="score-link">
+                            <span class="winning-team">Boats</span> 4 - 3 Lights Out
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/20/2024</td>
+                    <td>
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-glorifiedcrew.png" alt="Glorified Crew Logo" class="team-logo"> Glorified Crew
+                        </a>
+                    </td>
+                    <td>
+                        <a href="game-summary.html" class="score-link">
+                            Boats 2 - <span class="winning-team">Glorified Crew</span> 5
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08/15/2024</td>
+                    <td>
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-yorkcitykings.png" alt="York City Kings Logo" class="team-logo"> York City Kings
+                        </a>
+                    </td>
+                    <td>
+                        <a href="game-summary.html" class="score-link">
+                            <span class="winning-team">Boats</span> 4 - 3 York City Kings (OT)
+                        </a>
+                    </td>
+                </tr>
+                <!-- Add more recent games as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+
+
+ <!-- Recent Transactions Section -->
+ <section class="recent-transactions-section mt-4">
+    <div class="container">
+        <h2 class="text-center mb-4">Recent Transactions</h2>
+        <table class="table table-striped table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Transaction</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-boats.png" alt="Mutts Logo" class="team-logo"> Boats
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Boats sign Mutt_Anderson for NA S18
+                        </a>
+                    </td>
+                    <td>08/27/2024</td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-boats.png" alt="Lights Out Logo" class="team-logo"> Boats
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Boats release SheLuvvDJ20 for NA S18
+                        </a>
+                    </td>
+                    <td>08/27/2024</td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <a href="club.html" class="team-link">
+                            <img src="images/square-boats.png" alt="Glorified Crew Logo" class="team-logo"> Boats
+                        </a>
+                    </td>
+                    <td>
+                        <a href="profile-view.html" class="transaction-link">
+                            Boats release Saddzy for NA S18
+                        </a>
+                    </td>
+                    <td>08/27/2024</td>
+                </tr>
+                <!-- Add more transactions as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
 
     <!-- Stats Leaders Section -->
 <section class="stats-leaders-section mt-4">
@@ -154,39 +352,7 @@
     </div>
 </section>
 
-<!-- Recent Transactions Section -->
-<section class="recent-transactions-section mt-4">
-    <div class="container">
-        <h2 class="text-center mb-4">Recent Transactions</h2>
-        <table class="table table-striped table-hover text-center">
-            <thead>
-                <tr>
-                    <th>Team</th>
-                    <th>Transaction</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="text-center"><img src="images/square-boats.png" alt="Mutts Logo" class="team-logo"> Mutts</td>
-                    <td>Mutts sign Mutt_Anderson for NA S18</td>
-                    <td>08/27/2024</td>
-                </tr>
-                <tr>
-                    <td class="text-center"><img src="images/square-boats.png" alt="Lights Out Logo" class="team-logo"> Lights Out</td>
-                    <td>Lights Out release SheLuvvDJ20 for NA S18</td>
-                    <td>08/27/2024</td>
-                </tr>
-                <tr>
-                    <td class="text-center"><img src="images/square-boats.png" alt="Glorified Crew Logo" class="team-logo"> Glorified Crew</td>
-                    <td>Glorfied Crew release Saddzy for NA S18</td>
-                    <td>08/27/2024</td>
-                </tr>
-                <!-- Add more transactions as needed -->
-            </tbody>
-        </table>
-    </div>
-</section>
+
 
     <!-- Sorting Option -->
     <div class="container mt-4">
@@ -227,7 +393,10 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td><img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo"> m00ner</td>
+                        <td>
+                            <img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo">
+                            <a href="profile-view.html" class="player-link">m00ner26</a>
+                        </td>
                         <td>8</td>
                         <td>14</td>
                         <td>10</td>
@@ -244,7 +413,10 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><img src="images/ithl-fan.png" alt="Player 2" class="small-team-logo"> slapshot_77</td>
+                        <td>
+                            <img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo">
+                            <a href="profile-view.html" class="player-link">m00ner</a>
+                        </td>
                         <td>5</td>
                         <td>10</td>
                         <td>0</td>
@@ -300,7 +472,10 @@
                 <!-- Example Row 1 -->
                 <tr>
                     <td>1</td>
-                    <td><img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo"> m00ner</td>
+                    <td>
+                        <img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo">
+                            <a href="profile-view.html" class="player-link">m00ner</a>
+                    </td>
                     <td>8</td>
                     <td>14</td>
                     <td>10</td>
@@ -313,7 +488,10 @@
                 <!-- Example Row 2 -->
                 <tr>
                     <td>2</td>
-                    <td><img src="images/ithl-fan.png" alt="Player 2" class="small-team-logo"> slapshot_77</td>
+                    <td>
+                        <img src="images/fMSRJa_q.jpeg" alt="Player 1" class="small-team-logo">
+                            <a href="profile-view.html" class="player-link">m00ner</a>
+                    </td>
                     <td>5</td>
                     <td>10</td>
                     <td>10</td>
@@ -327,67 +505,77 @@
             </tbody>
         </table>
     </div>
-    <div class="standings-container">
-    <!-- Sorting Dropdown -->
-    <div class="sorting-row">
-        <select id="sortSeason" class="form-select">
-            <option value="Season">Sort by Season</option>
-            <!-- Add more options as needed -->
-        </select>
-    </div>
+    
+     <!-- Standings Section -->
+<section class="standings-section mt-4">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-center">Standings</h2>
+            <select id="sortSeason" class="form-select w-auto">
+                <option value="Season">Sort by Season</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
 
-    <table class="standings-table">
-        <thead>
-            <tr>
-                <th>POS</th>
-                <th class="logo-column">Logo</th>
-                <th>CLUB</th>
-                <th>GP</th>
-                <th>W</th>
-                <th>L</th>
-                <th>OTL</th>
-                <th>PTS</th>
-                <th>GF</th>
-                <th>GA</th>
-                <th>DIFF</th>
-                <th>L10</th>
-                <th>STRK</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="highlight">
-                <td>1</td>
-                <td><img src="images/square-boats.png" alt="Team Logo"></td>
-                <td>BOATS</td>
-                <td>12</td>
-                <td>12</td>
-                <td>0</td>
-                <td>0</td>
-                <td>24</td>
-                <td>100</td>
-                <td>1</td>
-                <td>99</td>
-                <td>10-0-0</td>
-                <td>W10</td>
-            </tr>
-            <tr class="highlight">
-                <td>2</td>
-                <td><img src="images/square-yorkcitykings.png" alt="Team Logo"></td>
-                <td>YORK CITY KINGS</td>
-                <td>12</td>
-                <td>12</td>
-                <td>0</td>
-                <td>0</td>
-                <td>24</td>
-                <td>100</td>
-                <td>1</td>
-                <td>99</td>
-                <td>10-0-0</td>
-                <td>W10</td>
-            </tr>
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
-</div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover standings-table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>POS</th>
+                        <th class="logo-column">Logo</th>
+                        <th>CLUB</th>
+                        <th>GP</th>
+                        <th>W</th>
+                        <th>L</th>
+                        <th>OTL</th>
+                        <th>PTS</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>DIFF</th>
+                        <th>L10</th>
+                        <th>STRK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>1</td>
+                        <td><img src="images/square-boats.png" alt="Team Logo" class="team-logo"></td>
+                        <td><a href="club.html" class="team-link">BOATS</a></td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>24</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>99</td>
+                        <td>10-0-0</td>
+                        <td>W10</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>2</td>
+                        <td><img src="images/square-yorkcitykings.png" alt="Team Logo" class="team-logo"></td>
+                        <td><a href="club.html" class="team-link">YORK CITY KINGS</a></td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>24</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>99</td>
+                        <td>10-0-0</td>
+                        <td>W10</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
