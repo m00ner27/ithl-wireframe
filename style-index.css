@@ -391,7 +391,7 @@ a.team-link:hover, a.transaction-link:hover {
 /* ^ to make winning team bold on club page*/
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
 }
 
